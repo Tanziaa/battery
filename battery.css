@@ -1,5 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #aff0ff, #549aac); 
+    color: #fff;
+    text-align: center;
+}
+
 .main {
-    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /
 }
 .battery-top {
     width: 30px;
@@ -51,3 +69,8 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .main {
+        margin: 30px 580px;
+    }
+}
